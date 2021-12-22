@@ -1,0 +1,26 @@
+void main() {
+  int i = 10;
+ 
+  drawTree(i);
+  drawStolb(i);
+}
+
+void drawTree(int r)
+
+{
+      int space = 0;
+  for(int row = 1; row <= r; row++)
+  {
+   
+    print(' '*(r-row)+'/' + ' '*space + r'\');
+    space = space+2;
+    
+   
+  }
+  
+}
+
+  void drawStolb (int r)
+  {
+    print (' '*(r-1) + '||');
+  }
